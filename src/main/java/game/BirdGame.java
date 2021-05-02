@@ -61,6 +61,7 @@ public class BirdGame extends JPanel implements Runnable{
                         }
                         break;
                 }
+
                 // 重新绘制界面
                 repaint();
                 // 休眠 1000/60 毫秒
@@ -73,6 +74,7 @@ public class BirdGame extends JPanel implements Runnable{
     public void start (String threadName) {
         if (t == null) {
             t = new Thread (this, threadName);
+
             t.start ();
         }
     }
